@@ -1,0 +1,48 @@
+{
+  "low": {
+    "value": 0.20,
+    "label": "Low CLI (analog: Chile / New Zealand)",
+    "features": {
+      "active_constraints": "2-3",
+      "rule_conflict_pairs": 0,
+      "ambiguity_flags": 0,
+      "adjudication_latency_cycles": 1,
+      "enforcement_inconsistency": 0.0,
+      "monitoring_coverage": 1.0,
+      "amendment_threshold": "simple_majority",
+      "penalty_variance": "low",
+      "constitutional_core": false
+    }
+  },
+  "medium": {
+    "value": 0.50,
+    "label": "Medium CLI (analog: Brazil / Spain)",
+    "features": {
+      "active_constraints": "5-7",
+      "rule_conflict_pairs": 2,
+      "ambiguity_flags": 1,
+      "adjudication_latency_cycles": 3,
+      "enforcement_inconsistency": 0.30,
+      "monitoring_coverage": 0.70,
+      "amendment_threshold": "supermajority_66",
+      "penalty_variance": "medium",
+      "constitutional_core": false
+    }
+  },
+  "high": {
+    "value": 0.80,
+    "label": "High CLI (analog: Argentina)",
+    "features": {
+      "active_constraints": "10+",
+      "rule_conflict_pairs": 5,
+      "ambiguity_flags": 3,
+      "adjudication_latency_cycles": 5,
+      "enforcement_inconsistency": 0.60,
+      "monitoring_coverage": 0.40,
+      "amendment_threshold": "unanimity",
+      "penalty_variance": "high_unpredictable",
+      "constitutional_core": true,
+      "non_derogable_rules": ["R1", "R4"]
+    }
+  }
+}
