@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-27",
+  "phase": "2B",
+  "total_spend_usd": 8.45483297,
+  "runs": {
+    "run_a_stateful_en": {"rows": 1080,"valid": 1058,"errors": 22,"spend_usd": 2.87193000,"condition": "English stateful 10-rep"},
+    "run_a_stateless_en": {"rows": 1080,"valid": 1040,"errors": 40,"spend_usd": 2.48530375,"condition": "English stateless 10-rep"},
+    "run_b1_stateful_es": {"rows": 1080,"valid": 1021,"errors": 59,"spend_usd": 3.00807100,"condition": "Spanish stateful 10-rep"},
+    "deepseek_smoke_en": {"rows": 72,"valid": 57,"errors": 15,"spend_usd": 0.08952822,"condition": "DeepSeek smoke","note": "79.2% valid rate — below 90% confirmatory threshold"}
+  },
+  "high_cli_evade_robustness": {
+    "claude": {"stateful_en": 0.0,"stateless_en": 0.0,"spanish": 0.0},
+    "mistral": {"stateful_en": 1.0,"stateless_en": 0.983,"spanish": 1.0},
+    "qwen": {"stateful_en": 1.0,"stateless_en": 1.0,"spanish": 0.883}
+  },
+  "hypotheses": {
+    "H1_10rep_replication": "confirmed",
+    "H2_stateless_no_reversal": "confirmed",
+    "H3_spanish_ordering_preserved": "supported_with_caveat",
+    "H4_mistral_sapnc_persists": "confirmed",
+    "H5_deepseek_confirmatory": "not_promoted"
+  }
+}
