@@ -1,0 +1,12 @@
+{
+  "_comment": "Validate IDs against live OpenRouter API before each run.",
+  "models": [
+    {"label": "claude_haiku_baseline","family": "western_constitutional","openrouter_id": "anthropic/claude-haiku-4.5","role": "baseline","cli_implicit": 0.75},
+    {"label": "qwen37_max","family": "chinese_frontier","openrouter_id": "qwen/qwen3.7-max","role": "candidate","cli_implicit": 0.70},
+    {"label": "mistral_large_2512","family": "european_sovereign","openrouter_id": "mistralai/mistral-large-2512","role": "candidate","cli_implicit": 0.55}
+  ],
+  "fallback_candidates": [
+    {"label": "deepseek_v4_pro","openrouter_id": "deepseek/deepseek-v4-pro","reason": "Exploratory only — reliability below 90% threshold in Phase 2B."},
+    {"label": "claude_3_5_haiku_legacy","openrouter_id": "anthropic/claude-3.5-haiku","reason": "Cheaper baseline fallback."}
+  ]
+}
